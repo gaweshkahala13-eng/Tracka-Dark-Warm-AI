@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # API Key goes here
-genai.configure(api_key="AIzaSyC2jbmJNK8kt5F9AvR6mkSSjAzgqLc-9N4")
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 st.title("My AI Assistant")
 
